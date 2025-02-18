@@ -1,0 +1,30 @@
+// {
+//   "manifest_version": 3,
+//   "name": "FN Buster",
+//   "version": "1.1",
+//   "description": "Bust Fake News in your daily life",
+//   "permissions": ["activeTab", "scripting", "contextMenus", "tabs", "storage"],
+//   "content_scripts": [
+//     {
+//       "matches": ["<all_urls>"],
+//       "js": [
+//         "lib/marked.min.js",
+//         "content/promptUi.js",
+//         "content/promptHandler.js",
+//         "content/index.js"
+//       ]
+//     }
+//   ],
+//   "background": {
+//     "service_worker": "background/index.js"
+//   },
+//   "action": {
+//     "default_popup": "popup/index.html"
+//   },
+//   "icons": {
+//     "16": "asset/logo_og.png",
+//     "48": "asset/logo_og.png",
+//     "128": "asset/logo_og.png"
+//   }
+// }
+*/

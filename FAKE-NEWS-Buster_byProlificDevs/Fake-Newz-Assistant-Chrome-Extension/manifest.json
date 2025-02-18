@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Fake News Buster",
+  "version": "1.0",
+  "description": "Detects if selected text is fake news using AI.",
+  "permissions": ["activeTab", "contextMenus", "storage", "scripting"],
+  "host_permissions": ["https://anup069-fake-news-detection-api.hf.space/*"],
+
+  "background": {
+    "service_worker": "background/background.js"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+
+  "icons": {
+    "16": "asset/logo_og.png",
+    "48": "asset/logo_og.png",
+    "128": "asset/logo_og.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"]
+    }
+  ]
+}

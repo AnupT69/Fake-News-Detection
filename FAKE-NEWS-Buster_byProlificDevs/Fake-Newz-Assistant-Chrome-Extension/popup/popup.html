@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>FN Config</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      href="https://fonts.googleapis.com/css2?family=Noto+Emoji"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        width: 340px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 rounded-xl dark:bg-gray-800">
+    <div class="container mx-auto p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-xl">
+      <!-- Header -->
+      <div class="mb-4">
+        <div class="items-center gap-6">
+          <h2 class="mb-2 text-2xl font-extrabold text-gray-900 dark:text-white">
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
+              >FAKE NEWS
+            </span>
+            Buster
+          </h2>
+          <!-- <button
+              id="toggleMode"
+              class="border border-gray-300 rounded-lg px-3 mb-1 ml-2 dark:text-white">
+              <span class="text-xl"></span>
+            </button> -->
+        </div>
+        <p class="text-base font-normal text-gray-500">
+          You can select your Interested Article and Paste here to Verify the News 
+        </p>
+      </div>
+
+      <!-- Form Elements -->
+      <div>
+        <!-- Gemini -->
+        <div class="w-full flex gap-4">
+          <div class="mb-4">
+            <label
+              class="block text-sm font-medium text-gray-700 dark:text-white"
+              >Check News Here</label
+            >
+            <input
+              type="text"
+              id="newsText"
+              class="mt-1 block w-full px-6 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white"
+              placeholder="Paste the text here..."
+            />
+          </div>
+        </div>
+        </div> 
+          <div class="my-4 flex">
+            <button
+              id="checkNews"
+              type="button"
+              class="text-white w-full bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 font-semibold rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2"
+            >
+              CLICK TO CHECK
+            </button>
+          </div>
+          <p class="text-lg px-5 text-center" id="result"></p>
+
+        </div class="text-center">
+            <footer class="flex items-center justify-center border-t border-gray-100 pt-5">
+              <p class="text-sm text-gray-500 text-center dark:text-white">
+                Powered by <span class="font-bold">ProlificDevs
+                </span>
+              </p>
+              <img src="/asset/LOGO.png" alt="logo" class="w-8 h-6 pl-2">  
+            </footer>
+        </div> 
+      </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
